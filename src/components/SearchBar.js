@@ -7,9 +7,10 @@ import SortBy from './SortBy';
 
 export default function SearchBar({restaurants,setFilteredRestaurants,numberOfRestaurants}) {
   const [searchText,setSearchText] = useState("");
-   console.log(restaurants)
+  //console.log('here is the data');
+  //console.log(restaurants)
   return (
-    <div className='bg-[#e04949] w-[100%] justify-center align-middle content-center text-center flex max-[850px]:block'>
+    <div className='bg-amber-400 w-[100%] justify-center align-middle content-center text-center flex max-[850px]:block'>
       <div className='my-auto text-2xl font-BreeSerif max-[850px]:my-[2rem] text-white flex text-center content-center align-middle justify-center'>{numberOfRestaurants} &nbsp; restaurants &nbsp; <CgArrowsExchange className=' w-[2rem] h-[2rem]'/></div>
     <div className='text-center my-8 mx-3 relative h-16 p-[0.5rem] w-5/12 rounded-lg flex max-[750px]:w-10/12 max-[900px]:w-9/12 m-auto max-[850px]:mx-[4rem] max-[500px]:mx-[2rem]'>
     <div className='pt-4 pl-2 rounded-l-lg bg-white w-6 border-none m-0'>

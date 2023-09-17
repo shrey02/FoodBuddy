@@ -6,9 +6,11 @@ import Body from './components/Body';
 import ErrorPage from './components/ErrorPage';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import RestaturantMenuPage from './components/RestaturantMenuPage';
 import { Provider } from 'react-redux';
 import store from './utils/store';
+import RestaurantMenu from './components/RestaturantMenuPage';
+import Cart from './components/Cart';
+import Contact from './components/Contact';
 
 const App = () =>{
     return (
@@ -38,7 +40,15 @@ const router = createBrowserRouter([
             },
             {
                 path: "/restaurant/:id",
-                element: <RestaturantMenuPage/>
+                element: <RestaurantMenu/>
+            },
+            {
+                path:'/cart',
+                element:<Cart/>
+            },
+            {
+                path:'/contact',
+                element:<Contact/>
             }
         ],
     },

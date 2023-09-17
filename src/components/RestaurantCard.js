@@ -1,7 +1,7 @@
 import React from "react";
 import { cardImageURL } from "../Constants";
 import {BsFillStarFill} from  "react-icons/bs"
-export default function RestaurantCard({name,avgRating,cloudinaryImageId,cuisines,deliveryTime,lastMileTravelString,costForTwoString,aggregatedDiscountInfo
+export default function RestaurantCard({name,avgRating,cloudinaryImageId,cuisines,sla,costForTwo,aggregatedDiscountInfo
 }) {
   return (
     <div className="w-72 h-80 hover:border mx-3 hover:shadow-lg hover:border-zinc-300 m-auto my-6 px-4 py-4 cursor-pointer">
@@ -16,8 +16,8 @@ export default function RestaurantCard({name,avgRating,cloudinaryImageId,cuisine
          <div className={avgRating>0?(avgRating>=4?("bg-green-500 mt-[0.7rem] mr-3 w-12 h-[1.4rem] rounded-sm justify-center pr-1 text-white font-semibold flex text-sm"):("bg-amber-700 w-12 h-[1.4rem] mt-[0.7rem] mr-3 justify-center pr-1 rounded-sm text-white font-semibold flex text-sm")):("flex font-thin mt-[0.5rem] mr-4 text-zinc-700")}>
                 <BsFillStarFill className=" mx-1 my-1"/> {isNaN(avgRating)?"--":avgRating}
          </div>
-         <div className="font-semibold text-slate-800 text-xs">{costForTwoString!==''?<span className="text-2xl font-semibold">.</span>:<></>} &nbsp;&nbsp;
-         {costForTwoString} &nbsp;&nbsp; {deliveryTime!==0?<span className="text-2xl font-semibold">.</span>:<></>} &nbsp;&nbsp;{deliveryTime+'min'}
+         <div className="font-semibold text-slate-800 text-xs">{costForTwo!==''?<span className="text-2xl font-semibold">.</span>:<></>} &nbsp;&nbsp;
+         {costForTwo} &nbsp;&nbsp; {sla.slaString!==''?<span className="text-2xl font-semibold">.</span>:<></>} &nbsp;&nbsp;{sla.slaString}
          </div>
          </div>
          <div className="font-semibold text-yellow-700 text-base text-center mt-3 pt-2"> {aggregatedDiscountInfo?.header?(aggregatedDiscountInfo?.header):("No active Offer")}</div>

@@ -56,9 +56,9 @@ export default function Carousel({carousel}) {
     <div className='py-6 m-auto relative w-10/12 h-[100%]'>
         <Slider {...settings}>
         {
-            carousel.map((carousel)=>(
-                <div key={carousel.data.bannerId} className='flex p-3'>
-                    <img src={cardImageURL+carousel?.data?.creativeId} alt='Carousel Image' className='m-auto w-[100%] h-auto rounded-md'></img>
+            carousel?.info.map((carousel)=>(
+                <div key={carousel?.id} className='flex p-3'>
+                    <img src={cardImageURL+carousel?.imageId} alt='Carousel Image' className='m-auto w-[100%] h-[100%] rounded-md'></img>
                 </div>
             ))
         }
