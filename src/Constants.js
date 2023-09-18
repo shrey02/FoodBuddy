@@ -10,7 +10,7 @@ export const COST_LOW_HIGH_URL = 'https://www.swiggy.com/dapi/restaurants/list/v
 
 export const COST_HIGH_LOW_URL = 'https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.3174112&lng=82.9738892&sortBy=COST_FOR_TWO_H2L&page_type=DESKTOP_WEB_LISTING'
 
-export const DEFAULT_DATA_URL = 'https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING'
+export const DEFAULT_DATA_URL = 'https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING'
 
 export const MENU_URL = 'https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=25.3174112&lng=82.9738892&restaurantId='
 

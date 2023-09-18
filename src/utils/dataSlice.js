@@ -4,7 +4,7 @@ import { DEFAULT_DATA_URL, DELIVERY_TIME_URL,COST_HIGH_LOW_URL,COST_LOW_HIGH_URL
 const dataSlice = createSlice({
     name: 'dataUlr',
     initialState:{
-        url:DEFAULT_DATA_URL,
+        url:'https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING',
     },
     reducers:{
         deliveryTime:(state,action)=>{
