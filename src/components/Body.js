@@ -5,12 +5,13 @@ import SearchBar from "./SearchBar";
 import Shimmer from "./Shimmer";
 import { useSelector } from "react-redux";
 import Carousel from "./Carousel";
+import { mockData } from "../utils/mockData";
 
 export default function Body() {
   const data_url = useSelector((store) => store.dataUrl.url);
     const [restaurants,setRestaurants] = useState([]);
     const [filteredRestaturants,setFilteredRestaurants] = useState([]);
-    const [restaurantNumber,setRestaurantNumber] = useState(0);
+    const [restaurantNumber,setRestaurantNumber] = useState(10);
     const [carousel,setCarousel] = useState(null)
    
     async function getRestaurants(){
@@ -33,7 +34,7 @@ export default function Body() {
       setRestaurants(jsonData?.data?.cards[dataIndex].card.card.gridElements.infoWithStyle.restaurants)
       // console.log(jsonData?.data?.cards[dataIndex].card.card.gridElements.infoWithStyle.restaurants)
       
-      
+      console.log(restaurants);
       // console.log(jsonData?.data?.cards[1]?.card?.card?.imageGridCards)
       }
       if(dataIndex>=0)setFilteredRestaurants(jsonData?.data?.cards[dataIndex].card.card.gridElements.infoWithStyle.restaurants)
@@ -42,10 +43,20 @@ export default function Body() {
       
       
     }
-    catch{}
+    catch(err){ 
+          console.log(err)
+    }
+    finally{
+      const timer = setTimeout(()=>{
+        setRestaurants(mockData.data.cards[5].card.card.gridElements.infoWithStyle.restaurants)
+        setFilteredRestaurants(mockData.data.cards[5].card.card.gridElements.infoWithStyle.restaurants) 
+     },4000)
+     clearTimeout(timer);
+    }
     }
 
     useEffect(()=>{
+        
         getRestaurants();
     },[data_url])
 
