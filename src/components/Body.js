@@ -19,7 +19,7 @@ export default function Body() {
       const jsonData =await response.json();
       // console.log(jsonData)
       setCarousel(jsonData?.data?.cards[1]?.card?.card?.imageGridCards)
-      // console.log(carousel)
+       console.log(carousel)
       let dataIndex=-1;
       let carouselIndex=-1;
       for(let i=0;i<jsonData?.data?.cards.length;i++){
@@ -61,8 +61,8 @@ export default function Body() {
       ))
       }</div>):
    ( <>
-   <div className="flex bg-zinc-800 h-auto">
-    {carousel!==null?<Carousel carousel={carousel}/>:<></>}</div>
+   <div className="flex  h-auto">
+    {carousel!==null?(<Carousel carousel={carousel}/>):(<></>)}</div>
    <div className="flex align-middle justify-center">
    <SearchBar setFilteredRestaurants={setFilteredRestaurants} 
     restaurants={restaurants}

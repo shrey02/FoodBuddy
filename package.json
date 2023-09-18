@@ -2,11 +2,10 @@
   "name": "namastereact",
   "version": "1.0.0",
   "description": "learn react and make projects",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel run build"
+    "build": "parcel build index.html"
   },
   "author": "Shrey Sinha",
   "license": "ISC",
