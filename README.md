@@ -40,8 +40,6 @@ Highlight the key features of your application. You can create a bullet list or 
 
 ## Getting Started
 
-Explain how to get started with your project. Include instructions for setting up the development environment, installing dependencies, and running the project locally. Use code blocks to demonstrate commands if necessary.
-
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/your-repo.git
