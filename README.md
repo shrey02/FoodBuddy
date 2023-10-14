@@ -1,7 +1,5 @@
 # FoodBuddy
 
-# Restaurant App
-
 ![image](https://github.com/shrey02/FoodBuddy/assets/63815222/29adb584-2f6a-43a6-aed1-a7fa81871ac9)
 
 
