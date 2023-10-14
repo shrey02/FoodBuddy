@@ -2,7 +2,7 @@
 
 # Restaurant App
 
-![Project Image](./images/project-screenshot.png)
+![image](https://github.com/shrey02/FoodBuddy/assets/63815222/32f76763-f6f5-4b79-b9dc-d1d928c7822e)
 
 ## Table of Contents
 
@@ -35,8 +35,6 @@ Highlight the key features of your application. You can create a bullet list or 
 ## Demo
 
 Include screenshots, GIFs, or a link to a live demo (if available). Make sure to provide visual elements that showcase your application's user interface and functionality.
-
-![image](https://github.com/shrey02/FoodBuddy/assets/63815222/32f76763-f6f5-4b79-b9dc-d1d928c7822e)
 
 ![image](https://github.com/shrey02/FoodBuddy/assets/63815222/67a0c695-e52c-48d5-9665-8f73ee62834b)
 
