@@ -9,14 +9,10 @@
 - [Features](#features)
 - [Demo](#demo)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## About
 
-Provide a brief description of your project. Include information about the purpose of the project, its features, and the problem it solves. Mention any context or background that may be relevant.
+Welcome to the Restaurant App, your one-stop destination for exploring and ordering from your favorite restaurants. Our app is designed to make your dining experience easy, delightful, and tailored to your preferences.
 
 ## Features
 
@@ -32,8 +28,6 @@ Highlight the key features of your application. You can create a bullet list or 
 - Bundling with Parcel
 
 ## Demo
-
-Include screenshots, GIFs, or a link to a live demo (if available). Make sure to provide visual elements that showcase your application's user interface and functionality.
 
 ![image](https://github.com/shrey02/FoodBuddy/assets/63815222/244ad91c-9de3-4add-89a1-375b1ce8ff51)
 
