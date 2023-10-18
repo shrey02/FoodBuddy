@@ -10,7 +10,7 @@ export default function Carousel({carousel}) {
     const NextArrow = ({ onClick }) => {
         return (
             <div className="bg-orange-100 w-14 h-14 rounded-full flex absolute top-[40%] left-[-2%] z-1 " onClick={onClick}>
-                <BsArrowLeft size={24} className='m-auto' />
+                <BsArrowRight size={24} className='m-auto' />
             </div>
         );
     };
@@ -18,7 +18,8 @@ export default function Carousel({carousel}) {
     const PrevArrow = ({ onClick }) => {
         return (
             <div className="bg-slate-100 w-14 h-14 rounded-full flex absolute top-[40%] right-[-2%] z-[3]" onClick={onClick}>
-                <BsArrowRight size={24} className='m-auto' />
+                
+                <BsArrowLeft size={24} className='m-auto' />
             </div>
         );
     };
@@ -67,51 +68,3 @@ export default function Carousel({carousel}) {
   )
 }
 
-// import React from 'react';
-// import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
-// import { cardImageURL } from '../Constants';
-// import {Carousel as Car} from 'react-multi-carousel';
-// import 'react-multi-carousel/lib/styles.css';
-
-// const Carousel = ({carousel}) => {
-//   // console.log(carousel.data.info[0].id)
-//   console.log(carousel)
-//   const responsive = {
-//     superLargeDesktop: {
-//       // the naming can be any, depends on you.
-//       breakpoint: { max: 4000, min: 3000 },
-//       items: 5
-//     },
-//     desktop: {
-//       breakpoint: { max: 3000, min: 1024 },
-//       items: 2.3
-//     },
-//     tablet: {
-//       breakpoint: { max: 1024, min: 464 },
-//       items: 2
-//     },
-//     mobile: {
-//       breakpoint: { max: 464, min: 0 },
-//       items: 1
-//     }
-//   };
-
-//   return (
-//     <>
-//       <h2 className='font-bold text-2xl my-4'>Best offers for you</h2>
-//       <Car responsive={responsive}>
-//         {carousel?.info.map((data) => (
-//           <div key={data.id} className='px-2 cursor-pointer'>
-//             <img
-//               src={cardImageURL + data.imageId}
-//               className=" object-cover rounded-3xl"
-//               alt={`Image ${data.id}`}
-//             />
-//           </div>
-//         ))}
-//         </Car>
-//     </>
-//   );
-// };
-
-// export default Carousel;
